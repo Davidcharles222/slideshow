@@ -21,14 +21,16 @@
     width: 50vw;
     height: 50vh;
     border-radius: 10px;
-    overflow: hidden;
+    overflow: hidden;/* isso é importante para que só apareçam as imagens que estão dentro do container */
 }
 
 .item {
     width: 50vw;
     height: 50vh;
-    transition: all 1s;
+    transition: all 2s;
 }
+
+/* detalhe aqui para imagem ficar antes, e mostrar já a segunda imagem */
 .item:first-child{
     margin-left: -100%;
 }
@@ -46,8 +48,8 @@
     align-items: center;
     width: 50px;
     color: #00000000;
-    user-select: none;
-    z-index: 1;
+    user-select: none; /* tirar modo de click visual */
+    z-index: 1; /* mostrar o botão por cima do container */
 }
 .action-button:hover{
     color: white;
@@ -57,3 +59,7 @@
     transition: all 1s;
 }
 
+h1{
+    text-align: center;
+    margin-top: 30px;
+}
